@@ -1,5 +1,5 @@
 ### Scenario
-Users intermittently receive a a `NullPointerException` when they call `getBookById()`.
+Users intermittently receive a `NullPointerException` when they call `getBookById()`.
 
 ### Objective
 Locate and fix the root cause (a `NullPointerException`).

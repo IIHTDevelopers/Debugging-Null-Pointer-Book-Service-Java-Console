@@ -6,12 +6,11 @@ import java.util.Map;
 
 public class Main {
 
-    private Map<Integer, Book> cache = new HashMap<>();
+    private Map<Integer, Book> cache;
 
+    // BUG: Locate and fix the root cause (a NullPointerException).
     public Book getBookById(int id) {
-        // BUG: cache may be null on first call -> NullPointerException
-    	init();
-        return cache.get(id);
+          return cache.get(id);
     }
 
     public void init() {
